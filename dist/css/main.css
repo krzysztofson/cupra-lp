@@ -94,6 +94,14 @@ img {
   padding-block: 80px;
 }
 
+.py-100 {
+  padding-block: 100px;
+}
+
+.mx-auto {
+  margin-inline: auto;
+}
+
 .mt-16 {
   margin-top: 16px;
 }
@@ -104,6 +112,14 @@ img {
 
 .bg-dark-grey {
   background-color: var(--color-dark-grey);
+}
+
+.text-black {
+  color: var(--color-black);
+}
+
+.text-center {
+  text-align: center;
 }
 
 .nav {
@@ -237,4 +253,61 @@ img {
   .demo-layout > :nth-child(2) {
     padding-top: 60px;
   }
+}
+
+.slider-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1066px;
+  padding-top: 76px;
+}
+
+.slider-subtitle {
+  display: block;
+  padding-block: 38px 48px;
+  color: var(--color-black);
+}
+
+.slider-spec {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding-block: 2px 48px;
+}
+.slider-spec p {
+  font-weight: 200;
+  font-size: 14px;
+}
+.slider-spec strong {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.slider-btn-prev,
+.slider-btn-next {
+  position: absolute;
+  left: 0;
+  top: 190px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light);
+  border: 1px solid var(--color-black);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.slider-btn-prev:hover,
+.slider-btn-next:hover {
+  opacity: 0.7;
+}
+
+.slider-btn-next {
+  left: auto;
+  right: 0;
+  transform: rotate(180deg);
 }

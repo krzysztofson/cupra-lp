@@ -83,6 +83,14 @@ img {
     padding-block: 80px;
 }
 
+.py-100 {
+    padding-block: 100px;
+}
+
+.mx-auto {
+    margin-inline: auto;
+}
+
 .mt-16 {
     margin-top: 16px;
 }
@@ -93,4 +101,12 @@ img {
 
 .bg-dark-grey {
     background-color: var(--color-dark-grey);
+}
+
+.text-black {
+    color: var(--color-black);
+}
+
+.text-center {
+    text-align: center;
 }
