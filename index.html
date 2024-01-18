@@ -117,7 +117,7 @@
     </section>
     <section class="features py-170 bg-dark-grey">
         <div class="container">
-            <div class="features-layout mb-120">
+            <div class="features-layout">
                 <img src="src/img/feature-1.jpg" alt="Technologia">
                 <div class="features-copy bg-dark-grey">
                     <span>Technologia</span>
@@ -125,7 +125,7 @@
                     <a class="btn btn-light my-32" href="#">Umów jazdę próbną</a>
                 </div>
             </div>
-            <div class="features-layout mb-120">
+            <div class="features-layout">
                 <div class="features-copy is-left bg-dark-grey">
                     <span>Potęga Designu</span>
                     <h3 class="mt-16">Crossover emanujący gracją, dynamizmem  i czystym wyrafinowaniem.</h3>
@@ -143,5 +143,71 @@
             </div>
         </div>
     </section>
+    <section class="contact py-100">
+        <div class="container">
+            <span class="text-center text-black">Jazda próbna</span>
+            <h3 class="mt-16 pb-32 text-center text-black">Umów się na bezpłatną<br> jazdę próbną</h3>
+            <form action="/submit-form" method="post" class="max-w-lg mx-auto">
+                <img class="my-32 mx-auto" src="src/img/contact.jpg" alt="Kontakt banner">
+                <div class="contact-inputs max-w-md mx-auto my-32">
+                    <input type="text" id="name" name="name" placeholder="Imię *" required>
+                    <input type="text" id="surname" name="surname" placeholder="Nazwisko (opcjonalnie)">
+                    <input type="email" id="email" name="email" placeholder="Adres e-mail *" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Nr. telefonu *" required>
+                    <p>* Pole wymagane</p>
+                </div>
+                
+                <p>Wysłanie uzupełnionego formularza oznacza Twoją zgodę na kontakt w celu przedstawienia informacji handlowej w wybrany przez Ciebie sposób w związku <a href="#">Czytaj więcej</a></p>
+                <p class="mt-16">Prosimy Cię też o wyrażenie poniższych zgód w celu możliwości przedstawiania Ci atrakcyjnych ofert / promocji produktów, akcesoriów i usług marki CUPRA w przyszłości.</p>
+              
+                <div class="contact-checkbox">
+                  <input type="checkbox" id="consentEmail" name="consent" value="email">
+                  <label for="consentEmail">Zgadzam się na przetwarzanie moich danych osobowych w celu przedstawienia mi informacji marketingowych i handlowych dotyczących produktów i usług marki CUPRA oraz innych powiązanych z marką CUPRA akcesoriów, produktów i usług motoryzacyjnych za pomocą:</label>
+                </div>
+              
+                <div class="contact-checkbox">
+                  <input type="checkbox" id="consentEmail" name="consent" value="email">
+                  <label for="consentPhone">Email</label>
+                </div>
+              
+                <div class="contact-checkbox">
+                  <input type="checkbox" id="consentPhone" name="consent" value="phone">
+                  <label for="consentPhone">Telefon</label>
+                </div>
+              
+                <div class="contact-checkbox">
+                  <input type="checkbox" id="consentSms" name="consent" value="sms">
+                  <label for="consentSms">Wiadomość SMS/MMS</label>
+                </div>
+              
+                <p>Masz prawo do wglądu, modyfikacji, ograniczenia przetwarzania i usunięcia swoich danych oraz do wycofania w każdym momencie swojej zgody.</p>
+                
+                <p class="mt-16">Twoje dane będą przetwarzane tylko w stopniu umożliwiającym realizację wymienionego celu.</p>
+                
+                <p class="mt-16">Administratorem Twoich danych jest Plichta spółka z ograniczoną odpowiedzialnością Spółka Komandytowa, z siedzibą w Wejherowie przy ulicy Gdańskiej 13c. Zapraszamy do zapoznania się z naszą polityką prywatności umieszczoną pod linkiem: <a href="https://www.plichta.com.pl/polityka-prywatnosci">www.plichta.com.pl/polityka-prywatnosci</a>.</p>
+              
+                <input type="submit" class="btn btn-black mt-48 mx-auto" value="Umów jazdę próbną">
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="text-black">SEAT CUPRA S.A.U. 2022 ®</p>
+                <div class="footer-links">
+                    <a href="#">Obowiązek informacyjny</a>
+                    <a href="#">Polityka cookies</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#">
+                        <img src="src/img/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="#">
+                        <img src="src/img/vimeo.svg" alt="Vimeo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -28,6 +28,10 @@ p {
     font-size: 20px;
 }
 
+a {
+    color: var(--color-black);
+}
+
 span {
     display: block;
     font-size: 16px;
@@ -36,6 +40,22 @@ span {
 img {
     display: block;
     max-width: 100%;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding-block: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #D5D5D5;
+    background-color: #F5F5F5;;
+
+    &::placeholder {
+        color: var(--color-black);
+        font-size: 16px;
+        line-height: 1.8;
+    }
 }
 
 .container {
@@ -75,8 +95,16 @@ img {
     max-width: 550px;
 }
 
+.max-w-lg {
+    max-width: 700px;
+}
+
 .pt-150 {
     padding-top: 150px;
+}
+
+.pb-32 {
+    padding-bottom: 32px;
 }
 
 .py-80 {
@@ -97,6 +125,10 @@ img {
 
 .mt-16 {
     margin-top: 16px;
+}
+
+.mt-48 {
+    margin-top: 48px;
 }
 
 .my-32 {
