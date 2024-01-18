@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     background-color: var(--color-light-grey);
-    z-index: 1;
+    z-index: 5;
 }
 
 .nav-content {
@@ -193,4 +193,41 @@
     left: auto;
     right: 0;
     transform: rotate(180deg);
+}
+
+// features
+.features-layout {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    @include breakpoint(lg) {
+        flex-wrap: nowrap;
+    }
+}
+
+.features-copy {
+
+    @include breakpoint(md) {
+        padding: 0 60px 60px;
+    }
+        
+
+    @include breakpoint(lg) {
+        padding: 0 80px 80px;
+        margin-left: -100px;
+    }
+
+    @include breakpoint(xl) {
+        padding: 0 117px 120px;
+    }
+
+    &.is-left {
+        @include breakpoint(lg) {
+            margin-left: 0;
+            margin-right: -100px;
+            z-index: 1;
+        }
+    }
 }
