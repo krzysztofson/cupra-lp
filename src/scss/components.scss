@@ -13,6 +13,16 @@
     padding-block: 18px;
 }
 
+.nav-content-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include breakpoint(lg) {
+        display: none;
+    }
+}
+
 .nav-content-left,
 .nav-content-right {
     display: flex;
@@ -20,10 +30,20 @@
     gap: 24px;
 }
 
+.nav-burger {
+    width: 100%;
+    max-width: 24px;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
     gap: 32px;
+    flex-direction: column;
+
+    @include breakpoint(lg) {
+        flex-direction: row;
+    }
 
     a {
         color: var(--color-text);
@@ -40,6 +60,7 @@
     color: var(--color-text);
     font-weight: 500;
     text-decoration: none;
+    text-align: center;
 }
 
 .btn {
@@ -47,6 +68,7 @@
     border: 1px solid var(--color-black);
     color: var(--color-black);
     text-decoration: none;
+    text-align: center;
     transition: 0.2s;
 
     &:hover {
