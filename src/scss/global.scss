@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    color: var(--color-light);
+}
+
+p, span {
+    color: var(--color-light-grey);
+}
+
+.container {
+    max-width: 1400px;
+    padding-inline: 0.875rem;
+    margin-inline: auto;
+}
+
+.visible-md {
+    display: none !important;
+
+    @include breakpoint(md) {
+        display: flex !important;
+    }
+}
+
+.visible-lg {
+    display: none !important;
+
+    @include breakpoint(lg) {
+        display: flex !important;
+    }
+}
+
+.hiden-lg {
+    @include breakpoint(lg) {
+        display: none;
+    }
+}
